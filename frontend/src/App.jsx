@@ -34,7 +34,7 @@ function App() {
 
     try {
       // Note: Remember to swap this localhost URL with your live Render link when you deploy!
-      const response = await axios.post('http://localhost:5000/generate-email', formData);
+      const response = await axios.post('https://ai-cold-email-generator-backend-61ay.onrender.com/', formData);
       const emailText = response.data.email;
       setGeneratedEmail(emailText);
 
